@@ -1,0 +1,182 @@
+/* modify to all */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+--main-color: #dec74b;
+}
+/* End modify to all */
+/* //////////////////////// */
+/* start sitting icon */
+.sitting-icon{
+    position: fixed;
+    background: #fff;
+    width: 17%;
+    height: 100vh;
+    top: 0;
+    left: -17%;
+    transition: 0.3s;
+    z-index: 3;
+}
+.sitting-icon.open{
+    left:0px;
+}
+.sitting-icon .icon{
+    float: right;
+    position: relative;
+    top: 100px;
+    background:#fff;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0px;
+    cursor:pointer;
+}
+.sitting-icon .sitting-content{
+
+}
+.sitting-icon .sitting-color{
+
+    text-align: center;
+    background: #eee;
+    margin-top: 0px;
+    height: 100px;
+}
+
+.sitting-icon .sitting-color h4{
+    margin-top: 0px;
+    padding-top: 15px;
+    font-family: sans-serif;
+    color: #666;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sitting-icon .sitting-color ul{
+    list-style: none;
+    padding-top: 5px;
+    padding-left: 0px;
+    margin-left: -25px;
+}
+.sitting-icon .sitting-color ul li{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 12px;
+    opacity: 0.2;
+    transition: all .3s;
+    cursor: pointer;
+}
+.sitting-icon .sitting-color ul li:hover{
+    transform: scale(1.2,1.2);
+    
+}
+.sitting-icon .sitting-color ul li.active{
+opacity:1;
+border:3px solid #fff
+}
+
+.sitting-icon .sitting-color ul li:first-child{
+    background: #dec74b;
+}
+.sitting-icon .sitting-color ul li:nth-child(2){
+    background: #2C2E43;
+}
+.sitting-icon .sitting-color ul li:nth-child(3){
+    background: #595260;
+}
+.sitting-icon .sitting-color ul li:nth-child(4){
+    background: #B2B1B9;
+}
+.sitting-icon .sitting-color ul li:last-child{
+    background:#297F87;
+}
+
+
+
+/* End sitting icon */
+/* /////////////////////////// */
+/* start landing */
+
+.landing{
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('../img/no1.jpg');
+    text-transform: capitalize;
+}
+.landing .over{
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    top: 0;
+}
+.container{
+    width:80%;
+    margin: auto;
+}
+.landing .header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2
+}
+.landing .header .inside-h .logo{
+    color: #f2f2f2;
+    display: inline-block;
+}
+.landing .header .inside-h i{
+    color:var(--main-color);
+}
+
+.landing .header ul{
+    list-style: none;
+    padding: 0px;
+    margin: 20px 0px;
+}
+.landing .header ul li:first-child{
+    color:var(--main-color);
+
+}
+
+.landing .header ul li{
+    color: #f2f2f2;
+    display: inline;
+    margin-right: 15px;
+}
+.landing .header ul li:hover{
+    color:var(--main-color);
+    cursor: pointer;
+}
+.landing .text{
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 50px);
+    right: calc(50% - 300px);
+    left: calc(50% - 300px);
+}
+.landing .text h1{
+    color: #f2f2f2;
+    font-family: cursive;
+}
+.landing .text h1 span{
+color:var(--main-color);
+}
+.landing .text p{
+    color: #aaa;
+    font-size: 17px;
+    text-transform: none;
+}
+
+@media (max-width:1000px){
+    .container{
+        width:90%;
+    }
+}
+/* End landing */
