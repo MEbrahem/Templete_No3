@@ -1,4 +1,15 @@
+// Reload page
 
+let reload = document.querySelector(".Reload");
+let loading = document.querySelectorAll(".Reload .span-Reload span");
+window.onload = setTimeout(function () {
+    reload.style.display = "none";
+    loading.forEach(load => {
+        load.style.animationPlayState = "paused";
+    })
+}, 5000)
+
+// End Relad Page
 // start sitting-icon
 
 let ad = document.querySelector('.sitting-icon .icon'),
@@ -93,6 +104,22 @@ alloption.forEach((span) => {
 })
 
 // End sitting-icon
+// Start Nav-Bollets
+let AllBollets = document.querySelectorAll(".nav-bollets .bollet")
+AllBollets.forEach(Bollets => {
+    Bollets.addEventListener("click", function () {
+        Bollets.parentElement.querySelectorAll(".active").forEach(N => {
+            N.classList.remove("active")
+        })
+        Bollets.classList.add("active");
+        let name = document.querySelector(".nav-bollets .bollet.active").dataset.section;
+        console.log(name);
+        document.querySelector(name).scrollIntoView({
+            behavior: "smooth"
+        })
+    })
+})
+// End Nav-Bollets
 // start landing pages.
 // start fixed header
 
