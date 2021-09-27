@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css" />
-
+    <link rel="icon" href="img/logo.png">
     <title>Templete No3</title>
 </head>
 
@@ -18,6 +18,9 @@
             <span></span>
             <span></span>
             <span></span>
+        </div>
+        <div class="text">
+            <h2></h2>
         </div>
     </div>
     <!-- start sitting icon -->
@@ -41,6 +44,14 @@
                 <span class='active' data-back="yes">yes</span>
                 <span data-back="no">no</span>
             </div>
+            <div class="sitting-Bollets">
+                <h4>Bollets</h4>
+                <span data-back="yes">yes</span>
+                <span data-back="no">no</span>
+            </div>
+            <!-- button reset -->
+            <button class=reset>Reset Sitting</button>
+            <!-- End button reset -->
         </div>
     </div>
 
@@ -60,6 +71,17 @@
     </div>
 
     <!-- End nav-Bollets -->
+    <!-- Start nav-Bollets -->
+
+    <div class="img-bollets">
+        <div class="Bimg" data-section='no1.jpg'></div>
+        <div class="Bimg" data-section='no2.jpg'></div>
+        <div class="Bimg" data-section='no3.jpg'></div>
+        <div class="Bimg" data-section='no4.jpg'></div>
+    </div>
+
+    <!-- End nav-Bollets -->
+
 
     <!-- start landing page -->
     <div class="landing" id="home">
@@ -73,6 +95,7 @@
                         <h3 class="logo">designChef</h3>
 
                     </div>
+                    <!-- <div class="container-link"> -->
                     <ul>
                         <li><a href="#home">home</a></li>
                         <li><a href="#about_us">About us</a></li>
@@ -80,6 +103,12 @@
                         <li><a href="#products">products</a></li>
                         <li><a href="#contact_us">Contact us</a></li>
                     </ul>
+                    <!-- </div> -->
+                    <!-- <div class="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div> -->
                 </div>
             </div>
 
@@ -97,11 +126,14 @@
                 <h2>about us</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis rerum enim, dolores
                     exercitationem
-                    animi quo quas fugit saepe corrupti illo! Perspiciatis nostrum quibusdam illum repudiandae facere
+                    animi quo quas fugit saepe corrupti illo! Perspiciatis nostrum quibusdam illum repudiandae
+                    facere
                     porro
                     distinctio deleniti nulla!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati aut voluptatibus amet? Rerum eos
-                    delectus deserunt nisi eaque, explicabo perspiciatis illo aperiam. Quod odio eos corrupti veritatis
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati aut voluptatibus amet? Rerum
+                    eos
+                    delectus deserunt nisi eaque, explicabo perspiciatis illo aperiam. Quod odio eos corrupti
+                    veritatis
                     ratione illo cum?
                 </p>
             </div>
@@ -187,7 +219,8 @@
                 <div class="contant">
                     <div class="left">
                         <h3>Test Heading</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nesciunt aliquid quis dolores
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nesciunt aliquid quis
+                            dolores
                             reiciendis temporibus voluptatibus quas nulla vitae quibusdam, cupiditate sit delectus
                             expedita
                             architecto laudantium modi. Distinctio, beatae error?</p>
@@ -195,7 +228,8 @@
                     <div class="clear"></div>
                     <div class="right">
                         <h3>Test Heading</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nesciunt aliquid quis dolores
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nesciunt aliquid quis
+                            dolores
                             reiciendis temporibus voluptatibus quas nulla vitae quibusdam, cupiditate sit delectus
                             expedita
                             architecto laudantium modi. Distinctio, beatae error?</p>
@@ -203,7 +237,8 @@
                     <div class="clear"></div>
                     <div class="right">
                         <h3>Test Heading</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nesciunt aliquid quis dolores
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nesciunt aliquid quis
+                            dolores
                             reiciendis temporibus voluptatibus quas nulla vitae quibusdam, cupiditate sit delectus
                             expedita
                             architecto laudantium modi. Distinctio, beatae error?</p>
@@ -211,7 +246,8 @@
                     <div class="clear"></div>
                     <div class="left">
                         <h3>Test Heading</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nesciunt aliquid quis dolores
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam nesciunt aliquid quis
+                            dolores
                             reiciendis temporibus voluptatibus quas nulla vitae quibusdam, cupiditate sit delectus
                             expedita
                             architecto laudantium modi. Distinctio, beatae error?</p>
@@ -309,6 +345,36 @@
         </div>
     </div>
     <!-- End Testimoniais -->
+
+    <!-- Start Contact Us -->
+
+    <div class="contact-us" id=contact-us>
+        <div class="over"></div>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form class="regestar">
+                <div class="contant">
+
+                    <div class="part-one">
+                        <input type="text" class="in" id="" placeholder="Your Name">
+                        <input type="tel" class="in" id="" placeholder="Your Phone" maxlength="11">
+                        <input type="email" class="in" id="" placeholder="Your Email"
+                            pattern="^\w+@\w+\.(com|div|net)$">
+                        <input type="text" class="in" id="" placeholder="Subject">
+
+                    </div>
+                    <div class="part-two">
+                        <textarea placeholder="Your Message" class="one"></textarea>
+                        <input type="submit" class="two" id="" value="Send">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- End Contact Us -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/index.js"></script>
