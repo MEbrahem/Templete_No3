@@ -1166,9 +1166,17 @@ outline: 1px solid var(--main-color);
 
 /* End Coutact Us */
 
-
-/* start Grid System */
-
-
-
-/* End Grid System */
+/* start footer */
+.Footer{
+    padding: 15px;
+    background: #666;
+    color: #fff;
+    margin: 0px;
+    font-size: 15px;
+}
+.Footer p{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+}
+/* End footer */
